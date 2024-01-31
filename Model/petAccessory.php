@@ -2,7 +2,7 @@
 
     require_once __DIR__.'/petProducts.php';
 
-    class games extends products{
+    class accessory extends products{
 
         public $size;
         public $weight;
