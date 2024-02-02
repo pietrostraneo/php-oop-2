@@ -1,13 +1,12 @@
 <?php
 
-class Breed{
+class Breed
+{
 
     public $name;
 
-    function __construct($_name){
-        $this->name = $_name
+    function __construct($_name)
+    {
+        $this->name = $_name;
     }
-
 }
-
-?>

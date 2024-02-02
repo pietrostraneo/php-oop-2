@@ -1,22 +1,20 @@
 <?php
 
-    require_once __DIR__.'/petProducts.php';
+require_once __DIR__ . '/petProducts.php';
 
-    class games extends products{
+class Game extends Product
+{
 
-        public $size;
-        public $weight;
-        public $sounds;
+    public $size;
+    public $weight;
+    public $sounds;
 
-        function __construct($_company,$_name,$_price,$_img,$_size,$_weight,$_sounds){
-            
-            parent::__construct($_company,$_name,$_price,$_img);
-            $this->size = $_size;
-            $this->weight = $_weight;
-            $this->sounds = $_sounds;
+    function __construct($_company, $_name, $_price, $_breed, $_img, $_size, $_weight, bool $_sounds)
+    {
 
-        }
-
+        parent::__construct($_company, $_name, $_price, $_breed, $_img);
+        $this->size = $_size;
+        $this->weight = $_weight;
+        $this->sounds = $_sounds;
     }
-
-?>
+}
